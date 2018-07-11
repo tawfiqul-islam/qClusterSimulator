@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Result {
+public class ResultSet {
 
     ArrayList<Integer> objects;
     ArrayList<Integer> features;
