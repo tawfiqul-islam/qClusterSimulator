@@ -95,9 +95,7 @@ public class Simulator {
                         DB[i][j] = Integer.parseInt(noInStringArr[j]);
                     }
                     M=j;
-                    //then you can parse it to Int as above
                 }catch(NumberFormatException npe){
-                    //do something
                 }
                 i++;
             }
