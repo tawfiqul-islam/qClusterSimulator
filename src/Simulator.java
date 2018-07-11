@@ -4,18 +4,18 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-public class Main {
+public class Simulator {
 
     static int N=0;
     static int M=0;
     static int DB[][] = new int[100][100];
-    static ArrayList<Result> resultList= new ArrayList();
+    static ArrayList<ResultSet> resultList= new ArrayList();
     static ArrayList<FeatureSet> featureSetList = new ArrayList();
     static ArrayList<ObjectSet> objectSetList = new ArrayList();
 
-    static class ResultComparator implements Comparator<Result> {
+    static class ResultComparator implements Comparator<ResultSet> {
         @Override
-        public int compare(Result a, Result b) {
+        public int compare(ResultSet a, ResultSet b) {
 
             //sort by score
             //if score is equal then sort by total number of features
@@ -138,7 +138,7 @@ public class Main {
         {
             for(int j=0;j<featureSetList.size();j++)
             {
-                Result res = new Result();
+                ResultSet res = new ResultSet();
                 res.objects=objectSetList.get(i).objects;
                 res.features=featureSetList.get(j).features;
                 res.calculateScore();

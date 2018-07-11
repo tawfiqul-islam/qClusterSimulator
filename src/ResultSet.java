@@ -23,7 +23,7 @@ public class ResultSet {
             double count=0;
             for(int j=0;j<features.size();j++)
             {
-                if(Main.DB[id][features.get(j)-1]==1)
+                if(Simulator.DB[id][features.get(j)-1]==1)
                 {
                     count++;
                 }
